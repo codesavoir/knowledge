@@ -80,7 +80,10 @@ plugins:
   - git-committers:
       repository: codesavoir/knowledge
       branch: main
-  - reading-time
+  - timetoread:
+      wpm: 240
+      allPages: True
+      textColour: ffffff
   - minify:
       minify_html: true
   - glightbox
