@@ -5,20 +5,20 @@
 
 <div class="grid cards" markdown>
 
--   :material-cloud-outline: **Cloud Computing**  
+-   :cloud: **Cloud Computing**  
     _Foundations, models, architecture, cost, security._  
-    [:material-arrow-right-circle: Explore](cloud-computing/overview.md)
+    [:arrow_right: Explore](cloud-computing/overview.md)
 
--   :material-source-branch: **Git Flow**  
+-   :twisted_rightwards_arrows: **Git Flow**  
     _Branching, commits, review, releases._  
-    [:material-arrow-right-circle: Explore](git-flow/overview.md)
+    [:arrow_right: Explore](git-flow/overview.md)
 
--   :material-compass-outline: **Roadmap**  
+-   :compass: **Roadmap**  
     _Upcoming domains: IaC, CI/CD, Observability, Security, Playbooks._
 
 </div>
 
-## Architecture Scope (Mermaid Map)
+## Architecture Scope (Diagram)
 ```mermaid
 flowchart LR
   A[Fundamentals] --> B[Cloud Models]
@@ -44,11 +44,11 @@ flowchart LR
 | Cheat Sheets | Rapid revision & onboarding |
 
 ## Quality Principles
-:material-check-all: Clarity over jargon  
-:material-check-all: Reproducible examples  
-:material-check-all: Vendor-neutral first  
-:material-check-all: Explicit assumptions  
-:material-check-all: Version awareness  
+- Clarity over jargon
+- Reproducible examples
+- Vendor-neutral first
+- Explicit assumptions
+- Version awareness
 
 ## Roadmap Highlights
 > IaC · CI/CD Patterns · Observability & SRE · Secure Delivery · Operational Playbooks
