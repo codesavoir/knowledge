@@ -1,0 +1,187 @@
+site_name: Codesavoir Knowledge Base
+site_description: Modern, curated DevOps & IT engineering knowledge hub (Foundations · Cloud · CI/CD · Containers · IaC · SRE · Observability · Security)
+site_url: https://knowledge.codesavoir.com
+repo_url: https://github.com/codesavoir/knowledge
+repo_name: GitHub
+copyright: "©2025 Codesavoir"
+
+nav:
+  - Home: index.md
+  - Foundations:
+      - DevOps Mindset: foundations/devops-mindset.md
+      - Linux Basics: foundations/linux-basics.md
+      - Networking Essentials: foundations/networking-essentials.md
+      - Git & Workflow: foundations/git-workflow.md
+      - Scripting (Bash/Python): foundations/scripting.md
+  - CI & Automation:
+      - CI/CD Overview: ci/overview.md
+      - GitHub Actions Patterns: ci/github-actions-patterns.md
+      - Jenkins Pipelines: ci/jenkins.md
+      - Testing Strategy: ci/testing-strategy.md
+      - Artifact Management: ci/artifacts.md
+  - Cloud:
+      - Multi-Cloud Strategy: cloud/multicloud-strategy.md
+      - AWS Core Services: cloud/aws-core.md
+      - GCP Core Services: cloud/gcp-core.md
+      - Azure Core Services: cloud/azure-core.md
+      - Cost Optimization: cloud/cost-optimization.md
+  - Containers & Orchestration:
+      - Docker Fundamentals: containers/docker-fundamentals.md
+      - Image Hardening: containers/image-hardening.md
+      - Kubernetes Architecture: containers/k8s-architecture.md
+      - K8s Operations: containers/k8s-operations.md
+      - Service Mesh (Istio/Linkerd): containers/service-mesh.md
+  - Infrastructure as Code:
+      - IaC Strategy: iac/strategy.md
+      - Terraform Patterns: iac/terraform-patterns.md
+      - Terraform Modules & Testing: iac/terraform-modules-testing.md
+      - Policy as Code (OPA): iac/policy-as-code.md
+      - Drift Detection: iac/drift-detection.md
+  - Observability:
+      - Observability Pillars: observability/pillars.md
+      - Logging Architecture: observability/logging.md
+      - Metrics & SLIs/SLOs: observability/metrics-sli-slo.md
+      - Tracing & Correlation: observability/tracing.md
+      - Dashboards & Alerting: observability/alerting.md
+  - Reliability & SRE:
+      - SRE Principles: sre/principles.md
+      - Incident Response: sre/incident-response.md
+      - Postmortems: sre/postmortems.md
+      - Capacity & Scaling: sre/capacity-scaling.md
+      - Chaos Engineering: sre/chaos.md
+  - Security & Compliance:
+      - Secure SDLC: security/secure-sdlc.md
+      - Secrets Management: security/secrets-management.md
+      - Supply Chain Security: security/supply-chain.md
+      - Vulnerability Management: security/vuln-management.md
+      - Compliance Mapping: security/compliance.md
+  - Playbooks:
+      - High CPU: playbooks/high-cpu.md
+      - Disk Pressure: playbooks/disk-pressure.md
+      - Pod CrashLoopBackOff: playbooks/pod-crashloop.md
+      - TLS Certificate Expiry: playbooks/tls-expiry.md
+      - Latency Spikes: playbooks/latency-spikes.md
+  - Tooling Cookbook:
+      - Bash Snippets: cookbook/bash-snippets.md
+      - Git Power Tips: cookbook/git-tips.md
+      - kubectl Productivity: cookbook/kubectl-productivity.md
+      - Helm Patterns: cookbook/helm-patterns.md
+      - Makefile Patterns: cookbook/makefile-patterns.md
+  - Study & Career:
+      - Learning Roadmaps: study/roadmaps.md
+      - Certification Strategy: study/certifications.md
+      - Interview Preparation: study/interview-prep.md
+      - Portfolio & Blogging: study/portfolio-blogging.md
+      - Continuous Learning: study/continuous-learning.md
+  - Meta:
+      - Contribution Guide: meta/contributing.md
+      - Content Style Guide: meta/style-guide.md
+      - Glossary: meta/glossary.md
+      - Changelog: meta/changelog.md
+
+# Theme configuration
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+    - tags
+  logo: assets/logo.svg
+  favicon: assets/favicon.png
+
+# Plugins
+plugins:
+  - search
+  - awesome-pages
+  - tags
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - minify:
+      minify_html: true
+  - glightbox
+  - macros
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.critic
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+author: Codesavoir Team
+edit_uri: edit/main/docs/
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/USERNAME
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/YOURPROFILE
+  tags:
+    DevOps: DevOps Practices
+    SRE: Site Reliability Engineering
+    Cloud: Cloud
+  analytics:
+    provider: google
+    property: G-XXXXXXX
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to analyze traffic and improve the experience.
+
+extra_css:
+  - assets/styles/overrides.css
+extra_javascript:
+  - assets/js/extra.js
+
+# Watch additional folders (if you add scripts or data later)
+watch:
+  - macros/
+
+# Strict build to catch issues early
+strict: true
