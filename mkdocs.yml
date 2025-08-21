@@ -1,5 +1,5 @@
 site_name: Codesavoir Knowledge Base
-site_description: Modern, curated DevOps & IT engineering knowledge hub (Foundations · Cloud · CI/CD · Containers · IaC · SRE · Observability · Security)
+site_description: Beginner-friendly Cloud Computing and Git Flow knowledge base for B.Tech Computer Science students in India
 site_url: https://knowledge.codesavoir.com
 repo_url: https://github.com/codesavoir/knowledge
 repo_name: GitHub
@@ -7,77 +7,30 @@ copyright: "©2025 Codesavoir"
 
 nav:
   - Home: index.md
-  - Foundations:
-      - DevOps Mindset: foundations/devops-mindset.md
-      - Linux Basics: foundations/linux-basics.md
-      - Networking Essentials: foundations/networking-essentials.md
-      - Git & Workflow: foundations/git-workflow.md
-      - Scripting (Bash/Python): foundations/scripting.md
-  - CI & Automation:
-      - CI/CD Overview: ci/overview.md
-      - GitHub Actions Patterns: ci/github-actions-patterns.md
-      - Jenkins Pipelines: ci/jenkins.md
-      - Testing Strategy: ci/testing-strategy.md
-      - Artifact Management: ci/artifacts.md
-  - Cloud:
-      - Multi-Cloud Strategy: cloud/multicloud-strategy.md
-      - AWS Core Services: cloud/aws-core.md
-      - GCP Core Services: cloud/gcp-core.md
-      - Azure Core Services: cloud/azure-core.md
-      - Cost Optimization: cloud/cost-optimization.md
-  - Containers & Orchestration:
-      - Docker Fundamentals: containers/docker-fundamentals.md
-      - Image Hardening: containers/image-hardening.md
-      - Kubernetes Architecture: containers/k8s-architecture.md
-      - K8s Operations: containers/k8s-operations.md
-      - Service Mesh (Istio/Linkerd): containers/service-mesh.md
-  - Infrastructure as Code:
-      - IaC Strategy: iac/strategy.md
-      - Terraform Patterns: iac/terraform-patterns.md
-      - Terraform Modules & Testing: iac/terraform-modules-testing.md
-      - Policy as Code (OPA): iac/policy-as-code.md
-      - Drift Detection: iac/drift-detection.md
-  - Observability:
-      - Observability Pillars: observability/pillars.md
-      - Logging Architecture: observability/logging.md
-      - Metrics & SLIs/SLOs: observability/metrics-sli-slo.md
-      - Tracing & Correlation: observability/tracing.md
-      - Dashboards & Alerting: observability/alerting.md
-  - Reliability & SRE:
-      - SRE Principles: sre/principles.md
-      - Incident Response: sre/incident-response.md
-      - Postmortems: sre/postmortems.md
-      - Capacity & Scaling: sre/capacity-scaling.md
-      - Chaos Engineering: sre/chaos.md
-  - Security & Compliance:
-      - Secure SDLC: security/secure-sdlc.md
-      - Secrets Management: security/secrets-management.md
-      - Supply Chain Security: security/supply-chain.md
-      - Vulnerability Management: security/vuln-management.md
-      - Compliance Mapping: security/compliance.md
-  - Playbooks:
-      - High CPU: playbooks/high-cpu.md
-      - Disk Pressure: playbooks/disk-pressure.md
-      - Pod CrashLoopBackOff: playbooks/pod-crashloop.md
-      - TLS Certificate Expiry: playbooks/tls-expiry.md
-      - Latency Spikes: playbooks/latency-spikes.md
-  - Tooling Cookbook:
-      - Bash Snippets: cookbook/bash-snippets.md
-      - Git Power Tips: cookbook/git-tips.md
-      - kubectl Productivity: cookbook/kubectl-productivity.md
-      - Helm Patterns: cookbook/helm-patterns.md
-      - Makefile Patterns: cookbook/makefile-patterns.md
-  - Study & Career:
-      - Learning Roadmaps: study/roadmaps.md
-      - Certification Strategy: study/certifications.md
-      - Interview Preparation: study/interview-prep.md
-      - Portfolio & Blogging: study/portfolio-blogging.md
-      - Continuous Learning: study/continuous-learning.md
-  - Meta:
-      - Contribution Guide: meta/contributing.md
-      - Content Style Guide: meta/style-guide.md
-      - Glossary: meta/glossary.md
-      - Changelog: meta/changelog.md
+  - Cloud Computing:
+      - Introduction: cloud-computing/overview.md
+      - Service Models (IaaS / PaaS / SaaS): cloud-computing/service-models.md
+      - Deployment Models: cloud-computing/deployment-models.md
+      - Key Concepts (Regions, Zones): cloud-computing/key-concepts.md
+      - Virtualization & Containers: cloud-computing/virtualization-containers.md
+      - Compute, Storage & Networking Basics: cloud-computing/compute-storage-networking.md
+      - Scalability & Elasticity: cloud-computing/scalability-elasticity.md
+      - Security Basics: cloud-computing/security-basics.md
+      - Cost & Pricing: cloud-computing/cost-pricing.md
+      - Case Studies & Examples: cloud-computing/case-studies.md
+  - Git Flow:
+      - Introduction: git-flow/overview.md
+      - Git Basics: git-flow/git-basics.md
+      - Branching Strategy: git-flow/branching-strategy.md
+      - Atomic Commits: git-flow/atomic-commits.md
+      - Commit Messages: git-flow/commit-messages.md
+      - Pull Requests (PRs): git-flow/pull-requests.md
+      - Issues & Tracking: git-flow/issues-tracking.md
+      - DevOps Mindset & Collaboration: git-flow/devops-mindset.md
+      - CI Integration: git-flow/ci-integration.md
+      - Release Management: git-flow/release-management.md
+      - Common Mistakes & Fixes: git-flow/common-mistakes.md
+      - Cheat Sheet: git-flow/cheat-sheet.md
 
 # Theme configuration
 theme:
@@ -170,6 +123,7 @@ extra:
     title: Cookie consent
     description: >-
       We use cookies to analyze traffic and improve the experience.
+  generator: false
 
 extra_css:
   - assets/styles/overrides.css
