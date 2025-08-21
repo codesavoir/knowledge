@@ -1,5 +1,5 @@
 site_name: Codesavoir Knowledge Base
-site_description: Professional DevOps & IT engineering knowledge hub (Cloud Computing, Git Flow, and expanding domains)
+site_description: Professional DevOps & IT engineering knowledge hub
 site_url: https://knowledge.codesavoir.com
 repo_url: https://github.com/codesavoir/knowledge
 repo_name: GitHub
@@ -93,7 +93,11 @@ markdown_extensions:
   - toc:
       permalink: true
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.critic

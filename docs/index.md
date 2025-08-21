@@ -33,6 +33,9 @@ flowchart LR
   J --> K[Release Discipline]
 ```
 
+!!! note "Diagram Rendering"
+    If the diagram does not appear, ensure JavaScript is enabled and the Mermaid custom fence is configured.
+
 ## Content Types
 | Type | Purpose |
 |------|---------|
