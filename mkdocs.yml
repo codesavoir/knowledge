@@ -79,19 +79,6 @@ theme:
 plugins:
   - search
   - tags
-  - timetoread:
-      wpm: 240
-      allPages: True
-      textColour: ffffff
-  - minify:
-      minify_html: true
-  - glightbox
-  - macros
-  - awesome-pages
-  - redirects
-  - mkdocs-simple-hooks
-  - mkdocs-video
-  - glightbox   # Lightbox for images
   - git-revision-date-localized:
       enable_creation_date: true
       locale: en
@@ -106,9 +93,15 @@ plugins:
         - index.md
   - git-authors:
       authorship_threshold_percent: 0
-      enabled_on_serve: true
       exclude:
         - index.md
+  - timetoread:
+      wpm: 240
+      allPages: true
+  - minify:
+      minify_html: true
+  - glightbox
+  - macros
 
 markdown_extensions:
   - admonition
@@ -127,8 +120,6 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
-  - md_in_html
-  - attr_list
   - toc:
       permalink: true
   - pymdownx.details

@@ -1,15 +1,9 @@
 pymdown-extensions
 mkdocs-material
 mkdocs-git-revision-date-localized-plugin
-mkdocs-git-authors-plugin
 mkdocs-git-committers-plugin-2
-mkdocs-material-extensions
 mkdocs-macros-plugin
-mkdocs-awesome-pages-plugin
 mkdocs-minify-plugin
-mkdocs-redirects
-mkdocs-section-index
-mkdocs-simple-hooks mkdocs-video
 mkdocs-timetoread-plugin
 mkdocs-glightbox
 

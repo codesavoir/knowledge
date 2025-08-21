@@ -1,0 +1,58 @@
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.crt
+*.p12
+
+# MkDocs build output
+site/
+
+# MkDocs & plugin caches
+.cache/
+.mkdocs-cache/
+
+# Distribution / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+
+# Coverage / test reports
+.coverage
+coverage.xml
+htmlcov/
+
+# Logs
+*.log
+*.log.*
+
+# Temporary / backup files
+*.tmp
+*.bak
+*~
+
+# IDE / editor folders
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node (if introduced later)
+node_modules/
