@@ -39,16 +39,11 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install mkdocs-material mkdocs-awesome-pages-plugin mkdocs-git-revision-date-localized-plugin mkdocs-minify-plugin mkdocs-glightbox pymdown-extensions mkdocs-macros-plugin
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install mkdocs-material mkdocs-awesome-pages-plugin mkdocs-git-revision-date-localized-plugin mkdocs-minify-plugin mkdocs-glightbox pymdown-extensions mkdocs-macros-plugin; fi
 
       - name: Lint mkdocs.yml
         run: |
-          python - <<'PY'
-import yaml,sys
-with open('mkdocs.yml') as f:
-    yaml.safe_load(f)
-print('mkdocs.yml valid')
-PY
+          python -c "import yaml,sys; yaml.safe_load(open('mkdocs.yml')); print('mkdocs.yml valid')"
 
       - name: Build site
         run: mkdocs build --strict
