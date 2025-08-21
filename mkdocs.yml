@@ -96,7 +96,7 @@ plugins:
       exclude:
         - index.md
   - timetoread:
-      wpm: 240
+      wpm: 80
       allPages: true
   - minify:
       minify_html: true
