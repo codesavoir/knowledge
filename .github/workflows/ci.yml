@@ -41,9 +41,8 @@ jobs:
           pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install mkdocs-material mkdocs-awesome-pages-plugin mkdocs-git-revision-date-localized-plugin mkdocs-minify-plugin mkdocs-glightbox pymdown-extensions mkdocs-macros-plugin; fi
 
-      - name: Lint mkdocs.yml
-        run: |
-          python -c "import yaml,sys; yaml.safe_load(open('mkdocs.yml')); print('mkdocs.yml valid')"
+      - name: Lint mkdocs.yml (allow python tags)
+        run: python -c "import yaml; yaml.load(open('mkdocs.yml'), Loader=yaml.Loader); print('mkdocs.yml parsed')"
 
       - name: Build site
         run: mkdocs build --strict
