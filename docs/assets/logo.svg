@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="48" viewBox="0 0 180 48" role="img" aria-labelledby="title desc">
+  <title id="title">Codesavoir</title>
+  <desc id="desc">Placeholder logo for Codesavoir Knowledge Base</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3F51B5"/>
+      <stop offset="100%" stop-color="#673AB7"/>
+    </linearGradient>
+  </defs>
+  <rect rx="8" width="48" height="48" fill="url(#g)"/>
+  <path fill="#FFFFFF" d="M24 12c6.627 0 12 5.373 12 12 0 1.93-.457 3.749-1.27 5.36l-3.037-1.52A8.97 8.97 0 0 0 33 24c0-4.971-4.029-9-9-9s-9 4.029-9 9 4.029 9 9 9c1.79 0 3.458-.525 4.86-1.43l1.52 3.037A11.94 11.94 0 0 1 24 36c-6.627 0-12-5.373-12-12s5.373-12 12-12Z"/>
+  <text x="56" y="31" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="600" fill="#2d2d2d">Code<tspan fill="#3F51B5">savoir</tspan></text>
+</svg>

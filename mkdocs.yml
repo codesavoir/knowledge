@@ -121,7 +121,7 @@ theme:
 # Plugins
 plugins:
   - search
-  - awesome-pages
+  # Removed awesome-pages (explicit nav defined; plugin caused spurious missing file warnings in strict mode)
   - tags
   - git-revision-date-localized:
       enable_creation_date: true
