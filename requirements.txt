@@ -1,7 +1,8 @@
 mkdocs-material
-mkdocs-awesome-pages-plugin
 mkdocs-git-revision-date-localized-plugin
 mkdocs-minify-plugin
 mkdocs-glightbox
 pymdown-extensions
 mkdocs-macros-plugin
+mkdocs-git-committers-plugin-2
+mkdocs-reading-time-plugin

@@ -36,6 +36,7 @@ nav:
 theme:
   name: material
   language: en
+  custom_dir: overrides
   palette:
     - scheme: default
       primary: indigo
@@ -61,8 +62,6 @@ theme:
     - navigation.footer
     - search.highlight
     - search.suggest
-    - content.action.edit
-    - content.action.view
     - content.code.copy
     - content.code.annotate
     - content.tabs.link
@@ -74,11 +73,14 @@ theme:
 # Plugins
 plugins:
   - search
-  # Removed awesome-pages (explicit nav defined; plugin caused spurious missing file warnings in strict mode)
   - tags
   - git-revision-date-localized:
       enable_creation_date: true
       type: timeago
+  - git-committers:
+      repository: codesavoir/knowledge
+      branch: main
+  - reading-time
   - minify:
       minify_html: true
   - glightbox
