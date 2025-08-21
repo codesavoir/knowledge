@@ -5,4 +5,4 @@ mkdocs-glightbox
 pymdown-extensions
 mkdocs-macros-plugin
 mkdocs-git-committers-plugin-2
-mkdocs-reading-time-plugin
+mkdocs-reading-time
