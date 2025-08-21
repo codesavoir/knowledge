@@ -151,7 +151,7 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
 
-author: Codesavoir Team
+site_author: Codesavoir Team
 edit_uri: edit/main/docs/
 extra:
   social:
@@ -175,10 +175,6 @@ extra_css:
   - assets/styles/overrides.css
 extra_javascript:
   - assets/js/extra.js
-
-# Watch additional folders (if you add scripts or data later)
-watch:
-  - macros/
 
 # Strict build to catch issues early
 strict: true
