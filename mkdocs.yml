@@ -67,19 +67,18 @@ theme:
     - content.tabs.link
     - toc.follow
     - tags
-  logo: assets/logo.svg
-  favicon: assets/favicon.png
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.path
+    - search.share
+
+  icon:
+     logo: fontawesome/brands/github
 
 # Plugins
 plugins:
   - search
   - tags
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: timeago
-  - git-committers:
-      repository: codesavoir/knowledge
-      branch: main
   - timetoread:
       wpm: 240
       allPages: True
@@ -88,6 +87,28 @@ plugins:
       minify_html: true
   - glightbox
   - macros
+  - awesome-pages
+  - redirects
+  - mkdocs-simple-hooks
+  - mkdocs-video
+  - glightbox   # Lightbox for images
+  - git-revision-date-localized:
+      enable_creation_date: true
+      locale: en
+      fallback_to_build_date: false
+      enable_git_follow: true
+      enabled: true
+      strict: true
+      type: timeago
+      custom_format: "%d. %B %Y"
+      timezone: Europe/Paris
+      exclude:
+        - index.md
+  - git-authors:
+      authorship_threshold_percent: 0
+      enabled_on_serve: true
+      exclude:
+        - index.md
 
 markdown_extensions:
   - admonition
@@ -95,6 +116,19 @@ markdown_extensions:
   - def_list
   - footnotes
   - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      linenums: false
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - md_in_html
+  - attr_list
   - toc:
       permalink: true
   - pymdownx.details
@@ -106,12 +140,8 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.critic
-  - pymdownx.inlinehilite
   - pymdownx.magiclink
-  - pymdownx.snippets
   - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -121,9 +151,7 @@ edit_uri: edit/main/docs/
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/USERNAME
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/YOURPROFILE
+      link: https://github.com/codesavoir
   tags:
     DevOps: DevOps Practices
     SRE: Site Reliability Engineering
