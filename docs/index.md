@@ -1,31 +1,59 @@
-# Welcome to the Codesavoir Knowledge Base
+# Codesavoir Knowledge Base
 
-This site helps B.Tech Computer Science students understand two core topics in a simple, friendly way:
+!!! abstract "Purpose"
+    Curated, evolving repository of practical DevOps & IT engineering knowledge.
 
-1. Cloud Computing – foundations, models, key concepts, practical examples.
-2. Git Flow – version control skills for teamwork and clean project history.
+<div class="grid cards" markdown>
 
-## How to Use This Site
-- Start with the Introduction pages in each section.
-- Move top to bottom in the left navigation.
-- Use the Cheat Sheet for quick revision.
-- Revisit examples before exams or labs.
+-   :material-cloud-outline: **Cloud Computing**  
+    _Foundations, models, architecture, cost, security._  
+    [:material-arrow-right-circle: Explore](cloud-computing/overview.md)
 
-## Visual Map (Conceptual)
+-   :material-source-branch: **Git Flow**  
+    _Branching, commits, review, releases._  
+    [:material-arrow-right-circle: Explore](git-flow/overview.md)
+
+-   :material-compass-outline: **Roadmap**  
+    _Upcoming domains: IaC, CI/CD, Observability, Security, Playbooks._
+
+</div>
+
+## Architecture Scope (Mermaid Map)
+```mermaid
+flowchart LR
+  A[Fundamentals] --> B[Cloud Models]
+  B --> C[Core Services]
+  C --> D[Scalability]
+  D --> E[Security]
+  E --> F[Cost Optimization]
+  A --> G[Git Basics]
+  G --> H[Branching]
+  H --> I[Review & PR]
+  I --> J[CI Integration]
+  J --> K[Release Discipline]
 ```
-Cloud Computing: Basics -> Models -> Core Services -> Scaling -> Security -> Cost -> Examples
-Git Flow: Basics -> Branching -> Commits -> PRs -> Issues -> CI -> Releases -> Cheat Sheet
-```
 
-## Study Tips
-- Learn small chunks daily (25–30 mins).
-- Practice commands while reading Git pages.
-- Draw simple diagrams of cloud architectures.
-- Teach a friend one concept each week.
+## Content Types
+| Type | Purpose |
+|------|---------|
+| Foundations | Core concepts & mental models |
+| How-To Guides | Implementation patterns |
+| Playbooks (future) | Fast incident / ops response |
+| Reference (future) | Command & config lookups |
+| Patterns & Anti-Patterns | What to repeat / avoid |
+| Cheat Sheets | Rapid revision & onboarding |
 
-## Coming Soon
-- Interactive diagrams
-- Practice quizzes
-- More examples and mini projects
+## Quality Principles
+:material-check-all: Clarity over jargon  
+:material-check-all: Reproducible examples  
+:material-check-all: Vendor-neutral first  
+:material-check-all: Explicit assumptions  
+:material-check-all: Version awareness  
 
-> Language is intentionally simple so you can build confidence first.
+## Roadmap Highlights
+> IaC · CI/CD Patterns · Observability & SRE · Secure Delivery · Operational Playbooks
+
+!!! note "Contribution"
+    Contribution workflow & style automation planned. Feedback loops will guide prioritization.
+
+> Continuous iteration over large infrequent drops.

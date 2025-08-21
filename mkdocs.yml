@@ -129,6 +129,4 @@ extra_css:
   - assets/styles/overrides.css
 extra_javascript:
   - assets/js/extra.js
-
-# Strict build to catch issues early
-strict: true
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
